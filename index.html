@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Structures – Варіант 5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Structures (Варіант 5)</h1>
+        <p>Введіть дані (якщо потрібно). Результати дивитись у консолі (F12).</p>
+
+        <div class="block">
+            <h2>Ввід даних</h2>
+
+            <label>Рядок для Valid Parentheses:</label>
+            <input id="inputString" type="text" placeholder="Наприклад: ([{}])">
+
+            <label>Ключ (для LRU get):</label>
+            <input id="inputKey" type="text" placeholder="Наприклад: 1">
+
+            <label>Ключ і значення (для LRU put):</label>
+            <input id="inputPutKey" type="text" placeholder="key">
+            <input id="inputPutValue" type="text" placeholder="value">
+        </div>
+
+        <div class="block">
+            <h2>Алгоритми</h2>
+
+            <button onclick="runStackTests()">Test Stack</button>
+            <button onclick="runQueueTests()">Test Queue (Two Stacks)</button>
+            <button onclick="runMinStackTests()">Test Min Stack</button>
+            <button onclick="runLRUTests()">Test LRU Cache</button>
+            <button onclick="runValidParentheses()">Valid Parentheses</button>
+        </div>
+
+        <p class="note">Результати дивитись у консолі браузера.</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
